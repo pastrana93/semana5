@@ -1,0 +1,41 @@
+---
+// Header.astro
+const siteTitle = "Semana 5"
+---
+
+<header class="header">
+  <h1>{siteTitle}</h1>
+  <nav>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/about">Acerca de</a></li>
+      <li><a href="/contact">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header {
+    padding: 1rem;
+    background-color: #720e0e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+</style>

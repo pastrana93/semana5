@@ -1,0 +1,54 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <Header />
+
+    <main class="content">
+		<h2>Bienvenido a Mi Sitio Web</h2>
+		<p>
+		  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel
+		  viverra justo. Sed vulputate, mauris ac tincidunt volutpat, justo erat
+		  sagittis sapien, sed vehicula ligula nunc et eros.
+		</p>
+		<p>
+		  Integer feugiat, nisl nec feugiat malesuada, mauris nibh lacinia urna,
+		  non fermentum turpis risus a libero. Praesent at convallis nulla. Etiam
+		  at magna nec nisi suscipit tincidunt nec eget lacus.
+		</p>
+		<p>
+		  Suspendisse potenti. Morbi nec lacus a turpis tempor commodo. In
+		  dignissim dignissim urna, id laoreet velit. Duis porttitor justo nec
+		  justo lacinia, at congue nulla laoreet.
+		</p>    </main>
+
+    <Footer />
+  </body>
+</html>
+</Layout>
+<style>
+	.content {
+	  max-width: 1200px;
+	  margin: 2rem auto;
+	  padding: 1rem;
+	  font-family: sans-serif;
+	  line-height: 1.6;
+	}
+	main {
+    width: 100%;
+    height: 100%;
+	background-image: url(../assets/fondo.svg);
+	background-size: 100%;
+  	background-position: auto;
+	background-repeat: no-repeat;
+  }
+  </style>
